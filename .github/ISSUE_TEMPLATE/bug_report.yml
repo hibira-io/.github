@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in an SDK doesn't work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Remove app secrets, API keys, tokens, device tokens and personal data** from everything you paste below.
+        Security issues go to security@hikibi.io, not here.
+  - type: input
+    id: version
+    attributes:
+      label: SDK version
+      placeholder: e.g. 1.2.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Platform and environment
+      description: OS / browser version, device, language and build tool versions.
+      placeholder: e.g. Android 15 on Pixel 8, Kotlin 2.1, AGP 8.7
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you expected to happen, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: The smallest code sample or project that shows the problem.
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant log output with timestamps. This is formatted as code automatically.
+      render: shell
+  - type: input
+    id: app-region
+    attributes:
+      label: App ID and cluster (optional)
+      description: Helps us check the server side. Never paste the app secret.
