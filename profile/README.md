@@ -29,28 +29,25 @@ your apps two things:
 - **Push notifications** — send to iOS, Android and browsers through a
   Beams-compatible API. Push is included in every plan at no extra cost.
 
-## Open-source SDKs
+## SDKs
 
-The Hikibi service itself is closed source. The client SDKs in this
-organization are open source:
+Open-source client SDKs for push notifications:
 
 | Repository | Platform | Install |
 |---|---|---|
 | [hikibi-push-android](https://github.com/hikibi-io/hikibi-push-android) | Android (Kotlin/Java), package `io.hikibi.push` | JitPack |
 | [hikibi-push-ios](https://github.com/hikibi-io/hikibi-push-ios) | iOS (Swift), module `HikibiPush` | Swift Package Manager |
-| `@hikibi/push-web` (coming soon) | Web push for browsers | npm |
 
-The push SDKs are forks of the MIT-licensed Pusher Beams client SDKs and keep
-their original license and copyright notices.
+For realtime channels, use the Pusher-compatible client you already know,
+such as `pusher-js` or Laravel Echo, and point it at Hikibi.
 
 ## Getting help
 
 - Start with the [guides](https://hikibi.io/guides) and the
   [migration guide](https://hikibi.io/migrate).
 - Found a bug in an SDK? Open an issue in that SDK's repository.
-- Account, billing or service questions: **support@hikibi.io**
-- Security issues: **security@hikibi.io** — please don't open a public issue.
-  See our [security policy](https://github.com/hikibi-io/.github/blob/main/SECURITY.md).
+- Questions about your account or the service: **support@hikibi.io**
+- Security issues: **security@hikibi.io** (please don't open a public issue).
 
 ---
 

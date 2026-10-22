@@ -4,8 +4,7 @@ Thanks for helping improve the Hikibi 響 client SDKs. This guide applies to
 every public repository in the [hikibi-io](https://github.com/hikibi-io)
 organization unless the repository has its own `CONTRIBUTING.md`.
 
-The Hikibi service itself is closed source, so issues and pull requests here
-are about the SDKs. For problems with your account, billing or the hosted
+Issues and pull requests here are about the SDKs. For problems with your account, billing or the hosted
 service, see [SUPPORT.md](SUPPORT.md).
 
 ## Reporting bugs
