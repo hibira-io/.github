@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/hikibi-io/.github/blob/main/SECURITY.md
+    about: Please report security issues privately to security@hikibi.io, not in a public issue.
+  - name: Account, billing or service question
+    url: https://github.com/hikibi-io/.github/blob/main/SUPPORT.md
+    about: Email support@hikibi.io for anything about your account, apps or the hosted service.
+  - name: Guides and migration
+    url: https://hikibi.io/guides
+    about: Setup guides for channels, webhooks and push notifications.
+  - name: Service status
+    url: https://status.hikibi.io
+    about: Check current incidents and maintenance.
