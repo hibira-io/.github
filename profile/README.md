@@ -57,6 +57,9 @@ into a surprise bill.
   Beams-compatible API, included in every plan at no extra cost.
 - **Webhooks and live usage.** Signed webhooks for channel and presence
   events, and a dashboard with live connections and today's messages per app.
+- **Works with AI agents.** Claude Code, Cursor and other MCP clients can
+  create apps, read usage and wire up an SDK through our MCP server at
+  `https://hikibi.io/mcp`.
 - **In your language.** Dashboard, emails, checkout and support in English,
   繁體中文, 简体中文, 日本語 and 한국어.
 
@@ -96,10 +99,12 @@ Laravel, PHP, Node.js, Python, Go, Ruby, Java, .NET, iOS, Android and Flutter.
 
 | Repository | Platform | Install |
 |---|---|---|
+| [large-presence-js](https://github.com/hikibi-io/large-presence-js) | Browsers, `@hikibi/large-presence`: rooms of up to 100,000 members with pusher-js or Laravel Echo | npm |
+| [hikibi-push-web](https://github.com/hikibi-io/hikibi-push-web) | Browsers, `@hikibi/push-web`: web push notifications | npm or jsDelivr |
 | [hikibi-push-android](https://github.com/hikibi-io/hikibi-push-android) | Android (Kotlin/Java), package `io.hikibi.push` | JitPack |
 | [hikibi-push-ios](https://github.com/hikibi-io/hikibi-push-ios) | iOS (Swift), module `HikibiPush` | Swift Package Manager |
 
-For realtime channels, keep the Pusher-compatible client you already use and
+For public, private and presence channels, keep the Pusher-compatible client you already use and
 point it at Hikibi.
 
 ## 💰 Simple plans
