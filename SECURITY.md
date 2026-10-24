@@ -8,9 +8,9 @@ reports from the security community.
 **Please do not report security issues in public GitHub issues, discussions or
 pull requests.**
 
-Email **security@hikibi.io** with:
+Email **security@hibira.io** with:
 
-- the affected product (the hosted service at hikibi.io, or which SDK and version),
+- the affected product (the hosted service at hibira.io, or which SDK and version),
 - a description of the issue and its impact,
 - steps to reproduce or a proof of concept,
 - your name or handle if you'd like to be credited.
@@ -29,7 +29,8 @@ on an SDK repository where it is enabled.
 
 ## Scope
 
-In scope: the hosted service on `hikibi.io` and its subdomains, and the code
+In scope: the hosted service on `hibira.io` and its subdomains (and the
+legacy `hikibi.io` domain, which still serves existing apps), and the code
 in the public repositories of the
 [hibira-io](https://github.com/hibira-io) organization.
 

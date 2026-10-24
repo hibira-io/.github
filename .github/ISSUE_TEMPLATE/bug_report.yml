@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Thanks for the report. **Remove app secrets, API keys, tokens, device tokens and personal data** from everything you paste below.
-        Security issues go to security@hikibi.io, not here.
+        Security issues go to security@hibira.io, not here.
   - type: input
     id: version
     attributes:

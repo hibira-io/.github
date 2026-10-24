@@ -1,6 +1,6 @@
 # hibira-io/.github
 
-Organization-wide defaults for [Hibira](https://hikibi.io) repositories on GitHub.
+Organization-wide defaults for [Hibira](https://hibira.io) repositories on GitHub.
 
 | Path | Purpose |
 |---|---|
