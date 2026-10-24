@@ -1,6 +1,6 @@
 # Security Policy
 
-We take the security of Hikibi 響 and its SDKs seriously, and we appreciate
+We take the security of Hibira and its SDKs seriously, and we appreciate
 reports from the security community.
 
 ## Reporting a vulnerability
@@ -31,7 +31,7 @@ on an SDK repository where it is enabled.
 
 In scope: the hosted service on `hikibi.io` and its subdomains, and the code
 in the public repositories of the
-[hikibi-io](https://github.com/hikibi-io) organization.
+[hibira-io](https://github.com/hibira-io) organization.
 
 Out of scope: denial-of-service and load testing, social engineering,
 physical attacks, spam, reports from automated scanners without a working

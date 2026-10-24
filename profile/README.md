@@ -2,7 +2,7 @@
   <a href="https://hikibi.io">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.png">
-      <img src="assets/wordmark.png" alt="Hikibi 響" width="320">
+      <img src="assets/wordmark.png" alt="Hibira" width="320">
     </picture>
   </a>
 </p>
@@ -25,13 +25,14 @@
 
 ---
 
-## 👋 Hi, we're Hikibi 響
+## 👋 Hi, we're Hibira
 
-**響** means "echo" or "resonance": a message sent once and heard
-everywhere at the same moment. That is what we build.
+**Every Event. Every Connection.** Hibira is realtime communication
+infrastructure: one event sent, and every connected user hears it at the
+same moment.
 
-Hikibi is a hosted realtime service run from Asia-Pacific. Your backend
-publishes an event over a simple HTTP API and Hikibi delivers it instantly to
+Hibira (formerly Hikibi) is a hosted realtime service run from Asia-Pacific. Your backend
+publishes an event over a simple HTTP API and Hibira delivers it instantly to
 every browser and app that is listening, whether that is one user or tens of
 thousands. We keep the WebSocket connections open, scale them, and track who
 is online, so you don't have to run realtime servers yourself.
@@ -43,7 +44,7 @@ into a surprise bill.
 
 ## ✨ What you get
 
-- **Drop-in Pusher compatibility.** Hikibi speaks the Pusher Channels
+- **Drop-in Pusher compatibility.** Hibira speaks the Pusher Channels
   protocol 7 and HTTP API. Laravel Broadcasting, Laravel Echo, `pusher-js`
   and the Pusher server SDKs work unchanged: you only change the host and keys.
 - **Low latency across Asia.** Hosted in Hong Kong, a short hop from Taipei,
@@ -99,13 +100,17 @@ Laravel, PHP, Node.js, Python, Go, Ruby, Java, .NET, iOS, Android and Flutter.
 
 | Repository | Platform | Install |
 |---|---|---|
-| [large-presence-js](https://github.com/hikibi-io/large-presence-js) | Browsers, `@hikibi/large-presence`: rooms of up to 100,000 members with pusher-js or Laravel Echo | npm |
-| [hikibi-push-web](https://github.com/hikibi-io/hikibi-push-web) | Browsers, `@hikibi/push-web`: web push notifications | npm or jsDelivr |
-| [hikibi-push-android](https://github.com/hikibi-io/hikibi-push-android) | Android (Kotlin/Java), package `io.hikibi.push` | JitPack |
-| [hikibi-push-ios](https://github.com/hikibi-io/hikibi-push-ios) | iOS (Swift), module `HikibiPush` | Swift Package Manager |
+| [large-presence-js](https://github.com/hibira-io/large-presence-js) | Browsers, `@hibira-io/large-presence`: rooms of up to 100,000 members with pusher-js or Laravel Echo | npm |
+| [hibira-push-web](https://github.com/hibira-io/hibira-push-web) | Browsers, `@hibira-io/push-web`: web push notifications | npm or jsDelivr |
+| [hibira-push-android](https://github.com/hibira-io/hibira-push-android) | Android (Kotlin/Java), package `io.hibira.push` | JitPack |
+| [hibira-push-ios](https://github.com/hibira-io/hibira-push-ios) | iOS and macOS (Swift), module `HibiraPush` | Swift Package Manager |
+
+The packages were renamed with the brand: `@hikibi/large-presence` and
+`@hikibi/push-web` still install but are deprecated, so switch to the
+`@hibira-io/*` names.
 
 For public, private and presence channels, keep the Pusher-compatible client you already use and
-point it at Hikibi.
+point it at Hibira.
 
 ## 💰 Simple plans
 
@@ -126,6 +131,6 @@ a 99.9% uptime SLA. See [pricing](https://hikibi.io/pricing).
 ---
 
 <sub>Pusher, Pusher Channels and Pusher Beams are trademarks of their
-respective owner. Hikibi is an independent service and is not affiliated
+respective owner. Hibira is an independent service and is not affiliated
 with, endorsed by or sponsored by Pusher or its owner. "Pusher-compatible" and
 "Beams-compatible" describe protocol and API compatibility only.</sub>

@@ -1,7 +1,7 @@
-# Contributing to Hikibi SDKs
+# Contributing to Hibira SDKs
 
-Thanks for helping improve the Hikibi 響 client SDKs. This guide applies to
-every public repository in the [hikibi-io](https://github.com/hikibi-io)
+Thanks for helping improve the Hibira client SDKs. This guide applies to
+every public repository in the [hibira-io](https://github.com/hibira-io)
 organization unless the repository has its own `CONTRIBUTING.md`.
 
 Issues and pull requests here are about the SDKs. For problems with your account, billing or the hosted

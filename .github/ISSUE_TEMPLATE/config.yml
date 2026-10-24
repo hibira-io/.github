@@ -1,10 +1,10 @@
 blank_issues_enabled: false
 contact_links:
   - name: Security vulnerability
-    url: https://github.com/hikibi-io/.github/blob/main/SECURITY.md
+    url: https://github.com/hibira-io/.github/blob/main/SECURITY.md
     about: Please report security issues privately to security@hikibi.io, not in a public issue.
   - name: Account, billing or service question
-    url: https://github.com/hikibi-io/.github/blob/main/SUPPORT.md
+    url: https://github.com/hibira-io/.github/blob/main/SUPPORT.md
     about: Email support@hikibi.io for anything about your account, apps or the hosted service.
   - name: Guides and migration
     url: https://hikibi.io/guides
