@@ -1,10 +1,10 @@
-# hikibi-io/.github
+# hibira-io/.github
 
-Organization-wide defaults for [Hikibi 響](https://hikibi.io) repositories on GitHub.
+Organization-wide defaults for [Hibira](https://hikibi.io) repositories on GitHub.
 
 | Path | Purpose |
 |---|---|
-| [`profile/README.md`](profile/README.md) | The public profile shown on https://github.com/hikibi-io |
+| [`profile/README.md`](profile/README.md) | The public profile shown on https://github.com/hibira-io |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to report bugs and send pull requests |
 | [`SECURITY.md`](SECURITY.md) | How to report a vulnerability |
 | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Community standards |
