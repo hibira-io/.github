@@ -1,0 +1,85 @@
+# Reusable workflow: posts a GitHub release to Slack through an incoming
+# webhook. Each hibira-io repo calls it from a thin workflow on
+# `release: published` (see release-notify.yml here for the template).
+# The message matches pusher-server's CI notifications: title line, a
+# coloured bar with the details, the release notes, and a footer.
+# No-op without SLACK_WEBHOOK_URL, and a failed post only warns.
+name: release-slack
+
+on:
+  workflow_call:
+    secrets:
+      SLACK_WEBHOOK_URL:
+        required: false
+
+permissions: {}
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Post to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          REPO: ${{ github.event.repository.name }}
+          TAG: ${{ github.event.release.tag_name }}
+          NAME: ${{ github.event.release.name }}
+          URL: ${{ github.event.release.html_url }}
+          NOTES: ${{ github.event.release.body }}
+          PRERELEASE: ${{ github.event.release.prerelease }}
+          AUTHOR: ${{ github.event.release.author.login }}
+        run: |
+          if [ -z "${SLACK_WEBHOOK_URL:-}" ]; then
+            echo "SLACK_WEBHOOK_URL not set; skipping notification"
+            exit 0
+          fi
+          if [ -z "$TAG" ]; then
+            echo "::warning::not a release event; skipping notification"
+            exit 0
+          fi
+
+          if [ "$PRERELEASE" = true ]; then
+            color="#d97706" kind="Pre-release"
+          else
+            color="#16a34a" kind="Release"
+          fi
+          title="🚀 ${REPO} ${TAG} released"
+          [ "$PRERELEASE" = true ] && title="🧪 ${REPO} ${TAG} pre-released"
+
+          esc() { sed -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g'; }
+          details="$kind *<${URL}|$(printf '%s' "${NAME:-$TAG}" | esc)>*  ·  by *${AUTHOR}*"
+          # GitHub Markdown → Slack mrkdwn: headings and **bold** to *bold*,
+          # [text](url) to <url|text>, list bullets to •.
+          body=$(printf '%s' "$NOTES" | tr -d '\r' | esc | sed -E \
+            -e 's/^#{1,6} +(.*)$/*\1*/' \
+            -e 's/\*\*([^*]+)\*\*/*\1*/g' \
+            -e 's/\[([^]]+)\]\(([^)]+)\)/<\2|\1>/g' \
+            -e 's/^( *)[-*] /\1• /')
+          if [ "${#body}" -gt 2800 ]; then
+            body="${body:0:2800}…"$'\n'"<${URL}|Full release notes>"
+          fi
+
+          repo_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"
+          footer="<${repo_url}|${GITHUB_REPOSITORY}> · <${repo_url}/releases/tag/${TAG}|${TAG}> · $(TZ=Asia/Taipei date '+%m-%d %H:%M')"
+
+          payload=$(jq -n -c \
+            --arg color "$color" --arg title "$title" --arg details "$details" \
+            --arg body "$body" --arg footer "$footer" '
+            {
+              text: $title,
+              blocks: [{type: "section", text: {type: "mrkdwn", text: ("*" + $title + "*")}}],
+              attachments: [{
+                color: $color,
+                blocks: (
+                  [{type: "section", text: {type: "mrkdwn", text: $details}}]
+                  + (if $body != "" then [{type: "section", text: {type: "mrkdwn", text: $body}}] else [] end)
+                  + [{type: "context", elements: [{type: "mrkdwn", text: $footer}]}]
+                )
+              }]
+            }')
+
+          if ! out=$(curl --silent --show-error --max-time 15 --request POST \
+            --header 'content-type: application/json' --data "$payload" "$SLACK_WEBHOOK_URL" 2>&1) || [ "$out" != ok ]; then
+            echo "::warning::Slack notification failed: ${out}"
+          fi
