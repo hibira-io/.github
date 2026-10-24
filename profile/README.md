@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://hikibi.io">
+  <a href="https://hibira.io">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.png">
       <img src="assets/wordmark.png" alt="Hibira" width="320">
@@ -10,17 +10,17 @@
 <p align="center"><b>Every Event. Every Connection.</b><br>Realtime communication infrastructure: WebSockets and push notifications, built for Asia-Pacific.</p>
 
 <p align="center">
-  <a href="https://status.hikibi.io"><img alt="Service status" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstatus.hikibi.io%2Fapi%2Fstatus&query=%24.status&label=status&color=informational&cacheSeconds=300"></a>
-  <a href="https://hikibi.io"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fhikibi.io&label=website"></a>
-  <a href="https://hikibi.io/pricing"><img alt="Free plan" src="https://img.shields.io/badge/free%20plan-no%20credit%20card-111110"></a>
+  <a href="https://status.hibira.io"><img alt="Service status" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstatus.hibira.io%2Fapi%2Fstatus&query=%24.status&label=status&color=informational&cacheSeconds=300"></a>
+  <a href="https://hibira.io"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fhibira.io&label=website"></a>
+  <a href="https://hibira.io/pricing"><img alt="Free plan" src="https://img.shields.io/badge/free%20plan-no%20credit%20card-111110"></a>
 </p>
 
 <p align="center">
-  <a href="https://hikibi.io">Website</a> ·
-  <a href="https://hikibi.io/guides">Guides</a> ·
-  <a href="https://hikibi.io/migrate">Migrate</a> ·
-  <a href="https://hikibi.io/pricing">Pricing</a> ·
-  <a href="https://status.hikibi.io">Status</a>
+  <a href="https://hibira.io">Website</a> ·
+  <a href="https://hibira.io/guides">Guides</a> ·
+  <a href="https://hibira.io/migrate">Migrate</a> ·
+  <a href="https://hibira.io/pricing">Pricing</a> ·
+  <a href="https://status.hibira.io">Status</a>
 </p>
 
 ---
@@ -60,19 +60,19 @@ into a surprise bill.
   events, and a dashboard with live connections and today's messages per app.
 - **Works with AI agents.** Claude Code, Cursor and other MCP clients can
   create apps, read usage and wire up an SDK through our MCP server at
-  `https://hikibi.io/mcp`.
+  `https://hibira.io/mcp`.
 - **In your language.** Dashboard, emails, checkout and support in English,
   繁體中文, 简体中文, 日本語 and 한국어.
 
 ## 🚀 Get started in three steps
 
-1. **Create an app** at [hikibi.io](https://hikibi.io) to get its ID, key and secret.
+1. **Create an app** at [hibira.io](https://hibira.io) to get its ID, key and secret.
 2. **Update your settings**: set the host and credentials in your server SDK
    and in Echo or `pusher-js`.
 3. **Deploy**: broadcast as before and watch connections and messages live in
    your dashboard.
 
-Moving from another provider? The [migration guide](https://hikibi.io/migrate)
+Moving from another provider? The [migration guide](https://hibira.io/migrate)
 lists every setting to change.
 
 ## 🧩 Works with your stack
@@ -93,7 +93,7 @@ lists every setting to change.
   <img height="28" alt="Flutter" title="Flutter" src="https://raw.githubusercontent.com/github/explore/main/topics/flutter/flutter.png">
 </p>
 
-Step-by-step [integration guides](https://hikibi.io/guides) cover JavaScript,
+Step-by-step [integration guides](https://hibira.io/guides) cover JavaScript,
 Laravel, PHP, Node.js, Python, Go, Ruby, Java, .NET, iOS, Android and Flutter.
 
 ## 📦 Our open-source SDKs
@@ -117,16 +117,16 @@ point it at Hibira.
 Start free with 100 peak connections and 200,000 messages a day, no credit
 card required. Paid plans run from US$29 to US$599 a month for up to 30,000
 peak connections, with every feature in every plan. Enterprise plans come with
-a 99.9% uptime SLA. See [pricing](https://hikibi.io/pricing).
+a 99.9% uptime SLA. See [pricing](https://hibira.io/pricing).
 
 ## 💬 Talk to us
 
-- 📖 Docs: [hikibi.io/guides](https://hikibi.io/guides)
-- 🟢 Status: [status.hikibi.io](https://status.hikibi.io)
+- 📖 Docs: [hibira.io/guides](https://hibira.io/guides)
+- 🟢 Status: [status.hibira.io](https://status.hibira.io)
 - 🐛 SDK bugs: open an issue in the SDK's repository
-- 📫 Support: **support@hikibi.io**
-- 🤝 Sales and Enterprise: **sales@hikibi.io** or [contact sales](https://hikibi.io/contact-sales)
-- 🔒 Security: **security@hikibi.io** (please don't open a public issue)
+- 📫 Support: **support@hibira.io**
+- 🤝 Sales and Enterprise: **sales@hibira.io** or [contact sales](https://hibira.io/contact-sales)
+- 🔒 Security: **security@hibira.io** (please don't open a public issue)
 
 ---
 
