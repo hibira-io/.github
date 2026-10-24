@@ -7,11 +7,11 @@
   </a>
 </p>
 
-<p align="center"><b>Realtime WebSockets and push notifications, built for Asia-Pacific.</b></p>
+<p align="center"><b>Every Event. Every Connection.</b><br>Realtime communication infrastructure: WebSockets and push notifications, built for Asia-Pacific.</p>
 
 <p align="center">
   <a href="https://status.hikibi.io"><img alt="Service status" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstatus.hikibi.io%2Fapi%2Fstatus&query=%24.status&label=status&color=informational&cacheSeconds=300"></a>
-  <a href="https://hikibi.io"><img alt="hikibi.io" src="https://img.shields.io/website?url=https%3A%2F%2Fhikibi.io&label=hikibi.io"></a>
+  <a href="https://hikibi.io"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fhikibi.io&label=website"></a>
   <a href="https://hikibi.io/pricing"><img alt="Free plan" src="https://img.shields.io/badge/free%20plan-no%20credit%20card-111110"></a>
 </p>
 
