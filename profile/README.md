@@ -115,7 +115,7 @@ point it at Hibira.
 ## 💰 Simple plans
 
 Start free with 100 peak connections and 200,000 messages a day, no credit
-card required. Paid plans run from US$29 to US$599 a month for up to 30,000
+card required. Five paid plans run from US$35 to US$699 a month for up to 30,000
 peak connections, with every feature in every plan. Enterprise plans come with
 a 99.9% uptime SLA. See [pricing](https://hibira.io/pricing).
 
