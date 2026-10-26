@@ -57,12 +57,14 @@ into a surprise bill.
 - **Push notifications.** Send to iOS, Android and browsers through a
   Beams-compatible API, included in every plan at no extra cost.
 - **Webhooks and live usage.** Signed webhooks for channel and presence
-  events, and a dashboard with live connections and today's messages per app.
+  events, and a dashboard with each app's connections and messages, live
+  from the Starter plan up.
 - **Works with AI agents.** Claude Code, Cursor and other MCP clients can
   create apps, read usage and wire up an SDK through our MCP server at
   `https://hibira.io/mcp`.
-- **In your language.** Dashboard, emails, checkout and support in English,
-  繁體中文, 简体中文, 日本語 and 한국어.
+- **In your language.** Site, dashboard, emails and checkout in English,
+  繁體中文, 简体中文, 日本語, 한국어, ไทย and Tiếng Việt; support in English,
+  Chinese, Japanese and Korean.
 
 ## 🚀 Get started in three steps
 
@@ -116,7 +118,8 @@ point it at Hibira.
 
 Start free with 100 peak connections and 200,000 messages a day, no credit
 card required. Six paid plans run from US$19 to US$699 a month for up to 30,000
-peak connections, with every feature in every plan. Enterprise plans come with
+peak connections; every plan includes the Pusher protocol, presence and push
+notifications. Enterprise plans come with
 a 99.9% uptime SLA. See [pricing](https://hibira.io/pricing).
 
 ## 💬 Talk to us
