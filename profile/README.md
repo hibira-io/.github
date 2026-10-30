@@ -96,7 +96,9 @@ lists every setting to change.
 </p>
 
 Step-by-step [integration guides](https://hibira.io/guides) cover JavaScript,
-Laravel, PHP, Node.js, Python, Go, Ruby, Java, .NET, iOS, Android and Flutter.
+Laravel, PHP, Node.js, Python, Go, Ruby, Java, .NET, iOS, Android and Flutter,
+plus our own packages for React, Vue, Nuxt, Rails, Filament, Godot, Unity, n8n
+and Terraform.
 
 ## 📦 Our open-source SDKs
 
@@ -106,6 +108,26 @@ Laravel, PHP, Node.js, Python, Go, Ruby, Java, .NET, iOS, Android and Flutter.
 | [hibira-push-web](https://github.com/hibira-io/hibira-push-web) | Browsers, `@hibira-io/push-web`: web push notifications | npm or jsDelivr |
 | [hibira-push-android](https://github.com/hibira-io/hibira-push-android) | Android (Kotlin/Java), package `io.hibira.push` | JitPack |
 | [hibira-push-ios](https://github.com/hibira-io/hibira-push-ios) | iOS and macOS (Swift), module `HibiraPush` | Swift Package Manager |
+
+## 🔌 Packages and plugins
+
+| Repository | Platform | Install |
+|---|---|---|
+| [react](https://github.com/hibira-io/react) | React 17–19, `@hibira-io/react`: hooks for events, presence and LLM streaming | npm |
+| [vue](https://github.com/hibira-io/vue) | Vue 3 and 2.7, `@hibira-io/vue`: composables for events, presence and LLM streaming | npm |
+| [nuxt](https://github.com/hibira-io/nuxt) | Nuxt 4, 3 and 2, `@hibira-io/nuxt`: module with server helpers | npm |
+| [lobby-js](https://github.com/hibira-io/lobby-js) | Browsers, `@hibira-io/lobby`: game rooms with seats, a host and chat | npm |
+| [spaces-js](https://github.com/hibira-io/spaces-js) | Browsers, `@hibira-io/spaces`: live cursors, avatars and locations | npm |
+| [laravel](https://github.com/hibira-io/laravel) | Laravel, `hibira-io/laravel`: broadcasting, push notifications and webhooks | Composer |
+| [filament](https://github.com/hibira-io/filament) | Filament 3–5, `hibira-io/filament`: live notifications, presence, edit locks, live tables and chat | Composer |
+| [rails](https://github.com/hibira-io/rails) | Rails 7–8, `hibira-rails`: Turbo Streams without Action Cable | RubyGems |
+| [godot](https://github.com/hibira-io/godot) | Godot 4.3+, `addons/hibira`: rooms and HibiraSync | GitHub releases |
+| [unity](https://github.com/hibira-io/unity) | Unity 2021.3+ incl. WebGL, `io.hibira.realtime` | OpenUPM or git URL |
+| [n8n-nodes-hibira](https://github.com/hibira-io/n8n-nodes-hibira) | n8n, `n8n-nodes-hibira`: Hibira and Hibira Trigger nodes | n8n community nodes |
+| [terraform-provider-hibira](https://github.com/hibira-io/terraform-provider-hibira) | Terraform, `hibira-io/hibira`: apps, webhooks and push credentials | Terraform Registry |
+
+Each one has a guide at [hibira.io/guides](https://hibira.io/guides), and
+runnable demos live in [examples](https://github.com/hibira-io/examples).
 
 The packages were renamed with the brand: `@hikibi/large-presence` and
 `@hikibi/push-web` still install but are deprecated, so switch to the
