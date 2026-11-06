@@ -20,7 +20,8 @@
   <a href="https://hibira.io/guides">Guides</a> ·
   <a href="https://hibira.io/migrate">Migrate</a> ·
   <a href="https://hibira.io/pricing">Pricing</a> ·
-  <a href="https://status.hibira.io">Status</a>
+  <a href="https://status.hibira.io">Status</a> ·
+  <a href="https://gaya.hibira.io">Gaya</a>
 </p>
 
 ---
@@ -135,6 +136,14 @@ The packages were renamed with the brand: `@hikibi/large-presence` and
 
 For public, private and presence channels, keep the Pusher-compatible client you already use and
 point it at Hibira.
+
+## 🎭 Also from Hibira: Gaya
+
+[**Gaya**](https://gaya.hibira.io) is our group-discussion app, built on Hibira's
+realtime channels. Ask a question or open a room, invite your friends, and a
+panel of personas debates it with you live in one room, then wraps up with a
+summary. It runs in the browser on desktop and mobile, in seven languages.
+Try it at [gaya.hibira.io](https://gaya.hibira.io).
 
 ## 💰 Simple plans
 
