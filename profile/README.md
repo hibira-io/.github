@@ -32,7 +32,7 @@
 infrastructure: one event sent, and every connected user hears it at the
 same moment.
 
-Hibira (formerly Hikibi) is a hosted realtime service run from Asia-Pacific. Your backend
+Hibira is a hosted realtime service run from Asia-Pacific. Your backend
 publishes an event over a simple HTTP API and Hibira delivers it instantly to
 every browser and app that is listening, whether that is one user or tens of
 thousands. We keep the WebSocket connections open, scale them, and track who
