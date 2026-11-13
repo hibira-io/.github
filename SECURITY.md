@@ -29,8 +29,7 @@ on an SDK repository where it is enabled.
 
 ## Scope
 
-In scope: the hosted service on `hibira.io` and its subdomains (and the
-legacy `hikibi.io` domain, which still serves existing apps), and the code
+In scope: the hosted service on `hibira.io` and its subdomains, and the code
 in the public repositories of the
 [hibira-io](https://github.com/hibira-io) organization.
 
