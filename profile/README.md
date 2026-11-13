@@ -130,10 +130,6 @@ and Terraform.
 Each one has a guide at [hibira.io/guides](https://hibira.io/guides), and
 runnable demos live in [examples](https://github.com/hibira-io/examples).
 
-The packages were renamed with the brand: `@hikibi/large-presence` and
-`@hikibi/push-web` still install but are deprecated, so switch to the
-`@hibira-io/*` names.
-
 For public, private and presence channels, keep the Pusher-compatible client you already use and
 point it at Hibira.
 
