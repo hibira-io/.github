@@ -7,7 +7,7 @@
   </a>
 </p>
 
-<p align="center"><b>Every Event. Every Connection.</b><br>Realtime communication infrastructure: WebSockets and push notifications, built for Asia-Pacific.</p>
+<p align="center"><b>Every Event. Every Connection.</b><br>Realtime communication infrastructure: WebSockets and push notifications, for teams everywhere.</p>
 
 <p align="center">
   <a href="https://status.hibira.io"><img alt="Service status" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fstatus.hibira.io%2Fapi%2Fstatus&query=%24.status&label=status&color=informational&cacheSeconds=300"></a>
@@ -32,24 +32,21 @@
 infrastructure: one event sent, and every connected user hears it at the
 same moment.
 
-Hibira is a hosted realtime service run from Asia-Pacific. Your backend
+Hibira is a hosted realtime service. Your backend
 publishes an event over a simple HTTP API and Hibira delivers it instantly to
 every browser and app that is listening, whether that is one user or tens of
 thousands. We keep the WebSocket connections open, scale them, and track who
 is online, so you don't have to run realtime servers yourself.
 
-Too often, apps used in Taipei, Tokyo, Seoul, Hong Kong and Singapore send
-their realtime traffic halfway around the world and back. We think realtime infrastructure for Asia should run in Asia, speak its
-customers' languages, and be priced so that growing an audience never turns
-into a surprise bill.
+We think realtime infrastructure should be a drop-in for the libraries you
+already use, speak its customers' languages, and be priced so that growing
+an audience never turns into a surprise bill.
 
 ## ✨ What you get
 
 - **Drop-in Pusher compatibility.** Hibira speaks the Pusher Channels
   protocol 7 and HTTP API. Laravel Broadcasting, Laravel Echo, `pusher-js`
   and the Pusher server SDKs work unchanged: you only change the host and keys.
-- **Low latency across Asia.** Hosted in Hong Kong, a short hop from Taipei,
-  Tokyo, Seoul and Singapore.
 - **Pricing that doesn't punish fan-out.** Only the events you publish count.
   Delivering one event to ten thousand subscribers costs the same as
   delivering it to one, and we never bill overages.
@@ -144,7 +141,7 @@ Try it at [gaya.hibira.io](https://gaya.hibira.io).
 ## 💰 Simple plans
 
 Start free with 100 peak connections and 200,000 messages a day, no credit
-card required. Six paid plans run from US$19 to US$699 a month for up to 30,000
+card required. Six paid plans run from US$19 to US$699 a month for up to 72,000
 peak connections; every plan includes the Pusher protocol, presence and push
 notifications. Enterprise plans come with
 a 99.9% uptime SLA. See [pricing](https://hibira.io/pricing).
